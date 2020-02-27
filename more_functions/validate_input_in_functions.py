@@ -7,5 +7,11 @@ def score_input(test_name, test_score=0, invalid_message='Invalid test score, tr
     'Invalid test score, try again!'
     :return: String showing test name with valid test score
     """
-    # return { test_name: test_score}
+
+    while True:
+        if 0 <= test_score <= 100:
+            break
+        else:
+            return invalid_message
+
     return test_name + ": " + str(test_score)
