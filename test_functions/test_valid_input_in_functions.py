@@ -20,7 +20,7 @@ class MyTestCase(unittest.TestCase):
 
     def test_score_input_invalid_message(self):
         self.assertEqual("Please enter a value between 0-100",
-                         validate_input_in_functions.score_input("Greg", 100, "Please enter a value between 0-100"))
+                         validate_input_in_functions.score_input("Greg", -100, "Please enter a value between 0-100"))
 
 
 if __name__ == '__main__':
