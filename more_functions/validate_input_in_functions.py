@@ -8,4 +8,4 @@ def score_input(test_name, test_score=0, invalid_message='Invalid test score, tr
     :return: String showing test name with valid test score
     """
     # return { test_name: test_score}
-    return pass
+    return test_name
